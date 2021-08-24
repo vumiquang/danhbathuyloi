@@ -52,6 +52,7 @@ unset($_SESSION['login-success']);
                 }             
             ?>
       <input class="btn btn-lg btn-primary btn-block" type="submit" name="submit" value="Sign In">
+      <a href="../index.php">Trở về trang chủ</a>
       <p class="mt-5 mb-3 text-muted">&copy; Danh bạ đại học Thủy Lợi</p>
     </form>
    

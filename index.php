@@ -14,11 +14,17 @@ include('./config/constants.php');
     <script src="./assets/js/font-awesome.min.js"></script>
   </head>
   <body>
-    <header>
-      <div class="container title">
-        <h1 class="text-center">Tra cứu thông tin danh bạ đại học Thủy lợi</h1>
-      </div>
-    </header>
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom">
+        <a href="<?php echo SITEURL.'index.php'?>" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+          <h3 class="fs-4">Danh bạ ĐHTL</h3>
+        </a>
+        <div><a href="admin/login.php">Đăng nhập</a></div>
+      </header>
+    </div>
+    <div class="container title">
+      <h1 class="text-center">Tra cứu thông tin danh bạ đại học Thủy lợi</h1>
+    </div>
     <section>
       <div class="container">
         <div class="search">
@@ -152,9 +158,7 @@ include('./config/constants.php');
 
             if (txtDonVi.toUpperCase().indexOf(inputDonVi) > -1 && txtName.toUpperCase().indexOf(inputName) > -1 && txtChucVu.toUpperCase().indexOf(inputChucVu) > -1) {
                 tr[i].style.display = "";
-                // console.log(1);
             } else {
-                // console.log(2);
                 tr[i].style.display = "none";
             }
         }
