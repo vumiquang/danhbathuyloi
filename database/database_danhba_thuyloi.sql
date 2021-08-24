@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th8 24, 2021 lúc 10:42 AM
+-- Thời gian đã tạo: Th8 24, 2021 lúc 11:23 AM
 -- Phiên bản máy phục vụ: 10.4.20-MariaDB
 -- Phiên bản PHP: 8.0.9
 
@@ -61,7 +61,11 @@ CREATE TABLE `tb_canbo` (
 --
 
 INSERT INTO `tb_canbo` (`id`, `hoten`, `chucvu`, `email`, `didong`, `madonvi`) VALUES
-(1, 'Trần Văn Thịnh', 'Giảng viên', 'tvthinh@gmail.com', '0315454545', 'DB');
+(1, 'Trần Văn Thịnh', 'Giảng viên', 'tvthinh@gmail.com', '0315454545', 'DB'),
+(9, 'Đỗ Lân', 'Phó BM', 'dolan@gmail.com', '07777777777', 'toan'),
+(10, 'Nguyễn Thanh Tùng', 'Trưởng khoa', 'ntt@gmail.com', '0999999999', 'vpk'),
+(11, 'Nguyễn Khánh Linh', 'Trợ lý khoa', 'linh@gmail.com', '087878787878', 'vpk'),
+(12, 'Nguyễn Hữu Thọ', 'Trưởng BM', 'nht@gmail.com', '014567878778', 'toan');
 
 -- --------------------------------------------------------
 
@@ -83,7 +87,9 @@ CREATE TABLE `tb_donvi` (
 --
 
 INSERT INTO `tb_donvi` (`id`, `tendonvi`, `sdt`, `madonvi`, `website`, `diachi`) VALUES
-(2, 'Đường bộ', '099999999999', 'DB', NULL, NULL);
+(2, 'Đường bộ', '099999999999', 'DB', NULL, NULL),
+(19, 'BM Toán', '03245454545', 'toan', 'toan@tlu.edu.vn', 'p204'),
+(20, 'Văn phòng khoa', '0555555555', 'vpk', 'vpk@tlu.edu.vn', 'p305');
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -123,13 +129,13 @@ ALTER TABLE `tb_admin`
 -- AUTO_INCREMENT cho bảng `tb_canbo`
 --
 ALTER TABLE `tb_canbo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT cho bảng `tb_donvi`
 --
 ALTER TABLE `tb_donvi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Các ràng buộc cho các bảng đã đổ

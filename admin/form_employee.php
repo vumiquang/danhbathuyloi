@@ -71,7 +71,7 @@
                             $tendonvi = $row['tendonvi']; 
                             $madonvi = $row['madonvi'];
                             ?>
-                            <option value="<?php echo $madonvi?>">
+                            <option value="<?php echo $madonvi?>" <?php if(isset($mdv) && $mdv==$madonvi) echo "selected"?>>
                                 <?php echo $tendonvi?>
                             </option>
                         <?php }}?>
